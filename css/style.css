@@ -14,6 +14,7 @@ body{
 
 .header{
     height: 100vh;
+    width: 100%;
     background-image: url(../assets/img/header3.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -41,12 +42,46 @@ body{
 
 }
 
+@media (min-width: 1024px) {
+    .contenedor__parrafo__header{
+    width: 50rem;
+    height: 12rem;
+    right: 20%;
+    top: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor__parrafo__header{
+    width: 20rem;
+    height: auto;
+    right: 5%;
+    top: 42%;
+    }
+}
+
 .parrafo__header{
     font-family: 'Edu NSW ACT Foundation', cursive;
     color: white;
     font-size: 1.8rem;
     font-weight: 600;
     padding: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+    .parrafo__header{
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .parrafo__header{
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 0.5rem;
+    }
 }
 
 .main__index{
@@ -58,11 +93,32 @@ body{
 
 .titulo{
     padding: 1rem;
+    text-align: center;
 }
 
 .parrafo{
     width: 80%;
     padding: 0.5rem;
+}
+
+.contenedor__sobremi{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contenedor__parrafo__sobremi{
+    width: 80vh;
+    padding-top: 1rem;
+    padding-left: 3rem;
+}
+
+.subtitulo__sobremi{
+    text-align: center;
+}
+.imagen__sobremi{
+    margin-top: 8rem;
+    padding-right: 3rem;
 }
 
 footer{
@@ -89,6 +145,105 @@ footer{
     width: 50rem;
     border-top: solid 2px black;
     padding-top: 1rem;
+}
+
+@media (max-width: 480px) {
+    .contenedor__parrafo__footer{
+        width: 20rem;
+        height: auto;
+    }
+}
+
+.posicion__tarjetas{
+    display: flex;
+    flex-direction:row ; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tamano__tarjeta{
+    width: 10rem;
+}
+
+.encabezado__Cont{
+    background-image: url(../img/Contacto.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.main__contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAE5D3; 
+    height: 1200px;
+    
+}
+
+.form__container{
+    width: 500px;
+    background-color: khaki;
+    align-items: center;
+    margin-top: 25px;
+    padding: 30px;
+    border: solid 2px;
+    border-radius: 8px;
+
+}
+
+.form .form__title{
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+.form input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: white;
+    font-weight: bold;
+
+}
+
+.form label{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+.form textarea{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    background-color: white;
+    border: solid 2px;
+
+}
+
+.form .form__btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ubicacion{
+ width: 500px;
+ margin-top: 25px;
+}
+
+.ubicacion h4{
+    font-size: 18px;
 }
 
 .parrafo__footer{

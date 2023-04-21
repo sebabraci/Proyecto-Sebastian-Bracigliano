@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,66 +10,94 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/4733ce35ff.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-      <!--comentario-->
-      <header>    
-        <nav>
-            <ul>
-                <li class="listaItem"><a href="../index.html">Inicio</a></li>
-                <li class="listaItem"><a href="./sobre_mi.html">Sobre Mi</a></li>
-                <li class="listaItem"><a href="./servicios.html">Servicios</a></li>
-                <li class="listaItem"><a href="./consultorios.html">Consultorios</a></li>
-                <li class="listaItem"><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="contenedorlogo">
-            <img class="logo" src="../assets/img/brain-logo-design-brain-bird.png" alt="logo">
-
+    <!--comentario-->
+    <header class="header container-fluid">
+        <div class="altoNavbar">
+            <nav class="navbar navbar-expand-lg navbar-light color__navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/img/brain-logo-design-brain-bird.png" alt="logo" width="15%">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/sobre_mi.html">Sobre Mi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/consultorios.html">Consultorios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <div class="parrafo_header">
-            <p>Las personas que creen que tienen la facultad de ejercer cierto grado de control sobre sus vidas son más saludables, más eficaz y más éxito que aquellos que no tienen fe en su capacidad para llevar a cabo cambios en sus vidas (A. Bandura)</p>
+        <div class="container contenedor__parrafo__header">
+            <p class="parrafo__header">Las personas que creen que tienen la facultad de ejercer cierto grado de control
+                sobre sus vidas son más saludables, más eficaz y más éxito que aquellos que no tienen fe en su capacidad
+                para llevar a cabo cambios en sus vidas (A. Bandura)</p>
         </div>
-
-   
 
     </header>
     <main class="main__contacto">
         <form class="form" action="" method="post">
             <div class="form__container">
                 <h2 class="form__title">Contacto</h2>
-                <label for="Nombre">Nombre: 
+                <label for="Nombre">Nombre:
                     <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
                 </label>
-                <label for="Nombre">Apellido: 
+                <label for="Nombre">Apellido:
                     <input type="text" name="apellido" placeholder="Ingrese su apellido" required>
                 </label>
-                <label for="Nombre">Telefono: 
+                <label for="Nombre">Telefono:
                     <input type="number" name="telefono" placeholder="Ingrese su telefono" required>
                 </label>
-                <label for="Nombre">Email: 
+                <label for="Nombre">Email:
                     <input type="email" name="email" placeholder="Ingrese su email" required>
                 </label>
-                <label for="Nombre">Mensaje:  
+                <label for="Nombre">Mensaje:
                     <textarea name="Mensaje" placeholder="Mensaje" required> </textarea>
 
-                    <input class="form__btn" type="submit" value="Enviar"> 
-            </div>           
+                    <input class="form__btn" type="submit" value="Enviar">
+            </div>
         </form>
 
         <div class="ubicacion">
             <h3> <strong>Ubicacion</strong></h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.817755221305!2d-58.71348158483776!3d-34.65930518044514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf924e106353%3A0xeda1a3584d25237b!2sSta.%20Fe%201285%2C%20B1718GTQ%20San%20Antonio%20de%20Padua%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1670703713015!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.817755221305!2d-58.71348158483776!3d-34.65930518044514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf924e106353%3A0xeda1a3584d25237b!2sSta.%20Fe%201285%2C%20B1718GTQ%20San%20Antonio%20de%20Padua%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1670703713015!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
     <footer>
-        <div>
-            <a href="https://www.instagram.com/" target="_blank"> <i class="icono fa-brands fa-instagram"></i> </a>
-            <a href="https://www.whatsapp.com/?lang=es" target="_blank"> <i class="icono fa-brands fa-facebook"></i> </a>
-            <a href="https://es-la.facebook.com/" target="_blank"> <i class="icono fa-brands fa-whatsapp"></i> </a>
-            
-        </div>
+        <div class="contenedor__redes">
+            <a class="redes" href="https://www.instagram.com/" target="_blank"> <i class="icono fa-brands fa-instagram"></i> </a>
+            <a class="redes" href="https://www.whatsapp.com/?lang=es" target="_blank"> <i class="icono fa-brands fa-facebook"></i> </a>
+            <a class="redes" href="https://es-la.facebook.com/" target="_blank"> <i class="icono fa-brands fa-whatsapp"></i> </a>
+      
+          </div>
+          <div class="contenedor__parrafo__footer">
+            <p class="parrafo__footer"> Todos Los Derechos Reservados © 2023 Sebastian Bracigliano</p>
+          </div>
+      
 
     </footer>
-    <script src="../js/bootstrap.bundle.min.js"></script> 
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +10,46 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/4733ce35ff.js" crossorigin="anonymous"></script>
 </head>
-<body>
-      <!--comentario-->
-      <header>    
-        <nav>
-            <ul>
-                <li class="listaItem"><a href="../index.html">Inicio</a></li>
-                <li class="listaItem"><a href="./sobre_mi.html">Sobre Mi</a></li>
-                <li class="listaItem"><a href="./servicios.html">Servicios</a></li>
-                <li class="listaItem"><a href="./consultorios.html">Consultorios</a></li>
-                <li class="listaItem"><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="contenedorlogo">
-            <img class="logo" src="../assets/img/brain-logo-design-brain-bird.png" alt="logo">
 
+<body>
+    <!--comentario-->
+    <header class="header container-fluid">
+        <div class="altoNavbar">
+            <nav class="navbar navbar-expand-lg navbar-light color__navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/img/brain-logo-design-brain-bird.png" alt="logo" width="15%">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/sobre_mi.html">Sobre Mi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/consultorios.html">Consultorios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <div class="parrafo_header">
-            <p>Las personas que creen que tienen la facultad de ejercer cierto grado de control sobre sus vidas son más saludables, más eficaz y más éxito que aquellos que no tienen fe en su capacidad para llevar a cabo cambios en sus vidas (A. Bandura)</p>
+        <div class="container contenedor__parrafo__header">
+            <p class="parrafo__header">Las personas que creen que tienen la facultad de ejercer cierto grado de control
+                sobre sus vidas son más saludables, más eficaz y más éxito que aquellos que no tienen fe en su capacidad
+                para llevar a cabo cambios en sus vidas (A. Bandura)</p>
         </div>
 
     </header>
@@ -34,49 +57,140 @@
         <div class="titulo">
             <h1>Servicios</h1>
         </div>
-        <div class="conteinedor__tarjetasServ" >
+        <!--
+        <div class="conteinedor__tarjetasServ">
             <div class="tarjeta">
                 <img class="tarj__img" src="../assets/img/menteninos.jpg" alt="Niños y Adolescentes">
                 <h3>Niños y Adolescentes</h3>
-                <p>Diagnostico y tratamiento de Problemas de conducta, ansiedad y depresión. Establecimiento de hábitos saludables y rutinas. Problemas escolares. Desarrollo de Habilidades sociales. Redacción de informes especializados</p>
+                <p>Diagnostico y tratamiento de Problemas de conducta, ansiedad y depresión. Establecimiento de hábitos
+                    saludables y rutinas. Problemas escolares. Desarrollo de Habilidades sociales. Redacción de informes
+                    especializados</p>
             </div>
             <div class="tarjeta">
                 <img class="tarj__img" src="../assets/img/orientacion familiar.webp" alt="orientacion familiar">
                 <h3>Orientacion familiar</h3>
-                <p>Orientación familiar en duelos, paternidad, depresión post parto, cuidados del recién nacido, abordaje del niño y adolescente con discapacidad, modelos parentales adecuados,limites, sexualidad,problemas comunicacionales. Terapia de parejas</p>
+                <p>Orientación familiar en duelos, paternidad, depresión post parto, cuidados del recién nacido,
+                    abordaje del niño y adolescente con discapacidad, modelos parentales adecuados,limites,
+                    sexualidad,problemas comunicacionales. Terapia de parejas</p>
             </div>
             <div class="tarjeta">
                 <img class="tarj__img" src="../assets/img/ansiedad.webp" alt="ansiedad">
                 <h3>Ansiedad</h3>
-                <p>Terapia Focalizada para tratar este mal tan comun y actual. Desde ataques de panico hasta TOC, la terapia cognitiva es la de mayor eficacia comprobada, permitiendo resultados duraderos. Se trabaja entre otras tecnicas, con relajacion, Imagineria, Mindfullness.</p>
+                <p>Terapia Focalizada para tratar este mal tan comun y actual. Desde ataques de panico hasta TOC, la
+                    terapia cognitiva es la de mayor eficacia comprobada, permitiendo resultados duraderos. Se trabaja
+                    entre otras tecnicas, con relajacion, Imagineria, Mindfullness.</p>
             </div>
             <div class="tarjeta">
                 <img class="tarj__img" src="../assets/img/depresion.jpg" alt="Depresion">
                 <h3>Depresion</h3>
-                <p>Otro padecer de nuestra sociedad actual. La TCC es efectiva para reducir los síntomas y mejorar la calidad de vida de los pacientes. Concentrandonos en el sujeto como un todo, con su padecer y sus fortalezas para superarse. Herramientas puntuales y eficaces.</p>
-            </div> 
+                <p>Otro padecer de nuestra sociedad actual. La TCC es efectiva para reducir los síntomas y mejorar la
+                    calidad de vida de los pacientes. Concentrandonos en el sujeto como un todo, con su padecer y sus
+                    fortalezas para superarse. Herramientas puntuales y eficaces.</p>
+            </div>
             <div class="tarjeta">
-                <img class="tarj__img" src="../assets/img/ninos-vista-lateral-jugando-al-aire-libre_23-2149920090.webp" alt="Discapacidad">
+                <img class="tarj__img" src="../assets/img/ninos-vista-lateral-jugando-al-aire-libre_23-2149920090.webp"
+                    alt="Discapacidad">
                 <h3>Discapacidad</h3>
-                <p>Abordaje cognitivo y neuropsicologico del sujeto con discapacidad. Orientación especializada a familias. Establecimiento de conductas básicas,rutina, desarrollo de habilidades sociales, tratamiento de problemas conductuales. Orientación escolar.</p>
+                <p>Abordaje cognitivo y neuropsicologico del sujeto con discapacidad. Orientación especializada a
+                    familias. Establecimiento de conductas básicas,rutina, desarrollo de habilidades sociales,
+                    tratamiento de problemas conductuales. Orientación escolar.</p>
             </div>
             <div class="tarjeta">
                 <img class="tarj__img" src="../assets/img/recien nacidos.webp" alt="Recien Nacidos">
                 <h3>Recien Nacidos</h3>
-                <p>Cuidados del recién nacido y del grupo familiar. Primeros días, sueño, lactancia, primeros meses, alimentación, rutinas,depresión porstaparto. Técnicas especificas: Metodo BLW (Baby led Weaning)Montessori, Estivil.</p>
-            </div> 
+                <p>Cuidados del recién nacido y del grupo familiar. Primeros días, sueño, lactancia, primeros meses,
+                    alimentación, rutinas,depresión porstaparto. Técnicas especificas: Metodo BLW (Baby led
+                    Weaning)Montessori, Estivil.</p>
+            </div>
         </div>
+        -->
+        <div class="card-group flex-wrap">
+            <div class="card">
+                <img src="../assets/img/menteninos.jpg" class="card-img-top" alt="Niños y Adolescentes">
+                <div class="card-body">
+                    <h5 class="card-title">Niños y Adolescentes</h5>
+                    <p class="card-text">Diagnostico y tratamiento de Problemas de conducta, ansiedad y depresión.
+                        Establecimiento de hábitos saludables y rutinas. Problemas escolares. Desarrollo de Habilidades
+                        sociales. Redacción de informes especializados.</p>
 
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/img/orientacion familiar.webp" class="card-img-top" alt="orientacion familiar">
+                <div class="card-body">
+                    <h5 class="card-title">Orientacion familiar</h5>
+                    <p class="card-text">Orientación familiar en duelos, paternidad, depresión post parto, cuidados del
+                        recién nacido,
+                        abordaje del niño y adolescente con discapacidad, modelos parentales adecuados,limites,
+                        sexualidad,problemas comunicacionales. Terapia de parejas.</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/img/ansiedad.webp" class="card-img-top" alt="ansiedad">
+                <div class="card-body">
+                    <h5 class="card-title">Ansiedad</h5>
+                    <p class="card-text">Terapia Focalizada para tratar este mal tan comun y actual. Desde ataques de
+                        panico hasta TOC, la
+                        terapia cognitiva es la de mayor eficacia comprobada, permitiendo resultados duraderos. Se
+                        trabaja
+                        entre otras tecnicas, con relajacion, Imagineria, Mindfullness.</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/img/depresion.jpg" class="card-img-top" alt="Depresion">
+                <div class="card-body">
+                    <h5 class="card-title">Depresion</h5>
+                    <p class="card-text">Otro padecer de nuestra sociedad actual. La TCC es efectiva para reducir los
+                        síntomas y mejorar la
+                        calidad de vida de los pacientes. Concentrandonos en el sujeto como un todo, con su padecer y
+                        sus
+                        fortalezas para superarse. Herramientas puntuales y eficaces.</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/img/ninos-vista-lateral-jugando-al-aire-libre_23-2149920090.webp"
+                    class="card-img-top" alt="Discapacidad">
+                <div class="card-body">
+                    <h5 class="card-title">Discapacidad</h5>
+                    <p class="card-text">Abordaje cognitivo y neuropsicologico del sujeto con discapacidad.
+                        Orientación especializada a
+                        familias. Establecimiento de conductas básicas,rutina, desarrollo de habilidades sociales,
+                        tratamiento de problemas conductuales. Orientación escolar.</p>
+
+                </div>
+            </div>
+            <div class="card tamano__card">
+                <img src="../assets/img/recien nacidos.webp" class="card-img-top" alt="Recien Nacidos">
+                <div class="card-body">
+                    <h5 class="card-title">Recien Nacidos</h5>
+                    <p class="card-text">Cuidados del recién nacido y del grupo familiar. Primeros días, sueño, lactancia, primeros meses,
+                        alimentación, rutinas,depresión porstaparto. Técnicas especificas: Metodo BLW (Baby led
+                        Weaning)Montessori, Estivil.</p>
+
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-        <div>
-            <a href="https://www.instagram.com/" target="_blank"> <i class="icono fa-brands fa-instagram"></i> </a>
-            <a href="https://www.whatsapp.com/?lang=es" target="_blank"> <i class="icono fa-brands fa-facebook"></i> </a>
-            <a href="https://es-la.facebook.com/" target="_blank"> <i class="icono fa-brands fa-whatsapp"></i> </a>
-            
+        <div class="contenedor__redes">
+            <a class="redes" href="https://www.instagram.com/" target="_blank"> <i
+                    class="icono fa-brands fa-instagram"></i> </a>
+            <a class="redes" href="https://www.whatsapp.com/?lang=es" target="_blank"> <i
+                    class="icono fa-brands fa-facebook"></i> </a>
+            <a class="redes" href="https://es-la.facebook.com/" target="_blank"> <i
+                    class="icono fa-brands fa-whatsapp"></i> </a>
+
+        </div>
+        <div class="contenedor__parrafo__footer">
+            <p class="parrafo__footer"> Todos Los Derechos Reservados © 2023 Sebastian Bracigliano</p>
         </div>
 
+
     </footer>
-    <script src="../js/bootstrap.bundle.min.js"></script>     
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
