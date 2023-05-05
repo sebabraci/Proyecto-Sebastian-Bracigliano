@@ -15,73 +15,111 @@ body{
 .header{
     height: 90vh;
     width: 100%;
-    background-image: url(../assets/img/header3.jpg);
+    background-image: url(../assets/img/stones-gf5c414201_640.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
 }
 
+@media (max-width: 768px) and (max-width: 1239){
+    .header{
+    background-image: url(../assets/img/stones-g0524026ce_1280.jpg);
+
+    }
+}
+
+@media (max-width: 1240px) {
+    .header{
+    background-image: url(../assets/img/stones-g260ac2531_1920.jpg);
+
+    }
+}
+
 .color__navbar{
-    background-color: lightsalmon;
+    background-color: #B1D7B4;
 }
 
 .text__navbar {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
+    color: aqua;
     
 }
 
-.contenedor__parrafo__header{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.323);
-    text-align: center;
-    width: 50rem;
-    height: 12rem;
-    right: 20%;
-    top: 40%;
-
+li a:hover{
+    background-color: rgb(103, 172, 103);
+    color: aqua;
+    border-radius: 0.5rem;
 }
 
-@media (min-width: 1024px) {
+li a:active{
+    background-color: forestgreen;
+    border-radius: 0.5rem;
+}
+
+
+.contenedor__parrafo__header{
+    /*position: absolute;
+    width: 2rem;*/
+    height: 10rem;
+    background-color: rgba(17, 2, 2, 0.47);
+    text-align: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    
+}
+
+@media (max-width: 576px) {
     .contenedor__parrafo__header{
-    width: 50rem;
-    height: 12rem;
-    right: 20%;
+    width: 90vw;
+    left: 5%;
+    }
+}
+
+@media (min-width: 768px){
+    .contenedor__parrafo__header{
+    width: 90vw;
+    left: 5%;
     top: 40%;
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 992px){
     .contenedor__parrafo__header{
-    width: 20rem;
-    height: auto;
-    right: 5%;
-    top: 42%;
+    width: 90vw;
+    left: 20%;
+    top: 40%;
     }
 }
 
 .parrafo__header{
     font-family: 'Edu NSW ACT Foundation', cursive;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    padding: 0.5rem;
 }
 
-@media (min-width: 1024px) {
+
+@media (max-width: 576px) {
     .parrafo__header{
-        font-size: 1.8rem;
-        font-weight: 600;
+        font-size: 0.1rem;
+        font-weight: 200;
         padding: 0.5rem;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 992px) {
     .parrafo__header{
-        font-size: 1.5rem;
-        font-weight: 600;
+        font-size: 2rem;
+        font-weight: 400;
         padding: 0.5rem;
     }
+}
+
+main{
+    background-color: #F7F6DC;
+    width: 100vw;
+    height: auto;
 }
 
 .main__index{
@@ -92,9 +130,26 @@ body{
 }
 
 .main__servicios{
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+@media (max-width: 576px) {
+    .main__servicios{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .main__servicios{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
 }
 
 
@@ -110,78 +165,45 @@ body{
 
 .contenedor__sobremi{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
-.contenedor__parrafo__sobremi{
-    width: 80vh;
-    padding-top: 1rem;
-    padding-left: 3rem;
-}
 
 .subtitulo__sobremi{
     text-align: center;
 }
 .imagen__sobremi{
-    margin-top: 8rem;
-    padding-right: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    
 }
 
-footer{
-    background-color: lightsalmon;
-    height: 7rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.contenedor__parrafo__consul{
+    text-align: center;
+    margin-left: 33%;
+    margin-top: 1rem;
+    
 }
 
-.redes{
-    font-size: 2rem;
-    text-decoration: none;
-    padding: 1rem;
-    color: black;
-}
-
-.contenedor__redes{
+.parrafo__consul{
+    width: 50%;
     padding: 0.5rem;
+    font-size: 1.5rem;
 }
 
-.contenedor__parrafo__footer{
-    width: 50rem;
-    border-top: solid 2px black;
-    padding-top: 1rem;
-}
-
-@media (max-width: 480px) {
-    .contenedor__parrafo__footer{
-        width: 20rem;
-        height: auto;
-    }
-}
-
-.encabezado__Cont{
-    background-image: url(../img/Contacto.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    position: relative;
-}
 
 .main__contacto{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     height: auto;
     
 }
 
 .form__container{
-    width: 500px;
+    width: 40vw;
     background-color:lemonchiffon;
     align-items: center;
     margin-top: 1rem;
@@ -189,6 +211,18 @@ footer{
     border: solid 2px;
     border-radius: 8px;
 
+}
+
+@media (max-width: 480px) {
+    .form__container{
+        width: 90vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .form__containerr{
+        width: 60vw;
+    }
 }
 
 
@@ -227,13 +261,53 @@ form textarea{
 }
 
 .ubicacion{
- width: 500px;
+ width: 50vw;
  margin-top: 3rem;
  margin-bottom: 3rem;
 }
 
+
 .ubicacion h4{
     font-size: 18px;
+}
+
+footer{
+    background-color: #FFC090;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 480px) {
+    footer{
+        height: 10rem;
+    }
+}
+
+.redes{
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1rem;
+    color: black;
+}
+
+.contenedor__redes{
+    padding: 0.5rem;
+}
+
+.contenedor__parrafo__footer{
+    width: 50rem;
+    border-top: solid 2px black;
+    padding-top: 1rem;
+}
+
+@media (max-width: 480px) {
+    .contenedor__parrafo__footer{
+        width: 20rem;
+        height: auto;
+    }
 }
 
 .parrafo__footer{
