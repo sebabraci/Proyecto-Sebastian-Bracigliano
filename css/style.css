@@ -22,6 +22,13 @@ body{
     position: relative;
 }
 
+@media (max-width: 1240px) {
+    .header{
+    background-image: url(../assets/img/stones-g260ac2531_1920.jpg);
+
+    }
+}
+
 @media (max-width: 768px) and (max-width: 1239){
     .header{
     background-image: url(../assets/img/stones-g0524026ce_1280.jpg);
@@ -29,12 +36,6 @@ body{
     }
 }
 
-@media (max-width: 1240px) {
-    .header{
-    background-image: url(../assets/img/stones-g260ac2531_1920.jpg);
-
-    }
-}
 
 .color__navbar{
     background-color: #B1D7B4;
@@ -59,20 +60,22 @@ li a:active{
 
 
 .contenedor__parrafo__header{
-    /*position: absolute;
-    width: 2rem;*/
+    position: absolute;
+    width: 20rem;
     height: 10rem;
     background-color: rgba(17, 2, 2, 0.47);
     text-align: center;
+    padding-top: 2rem;
     padding-left: 5rem;
     padding-right: 5rem;
     
 }
 
-@media (max-width: 576px) {
+@media (min-width: 992px){
     .contenedor__parrafo__header{
     width: 90vw;
-    left: 5%;
+    left: 20%;
+    top: 40%;
     }
 }
 
@@ -84,11 +87,10 @@ li a:active{
     }
 }
 
-@media (min-width: 992px){
+@media (max-width: 576px) {
     .contenedor__parrafo__header{
     width: 90vw;
-    left: 20%;
-    top: 40%;
+    left: 5%;
     }
 }
 
@@ -99,19 +101,18 @@ li a:active{
     font-weight: 600;
 }
 
+@media (max-width: 992px) {
+    .parrafo__header{
+        font-size: 2rem;
+        font-weight: 400;
+        padding: 0.5rem;
+    }
+}
 
 @media (max-width: 576px) {
     .parrafo__header{
         font-size: 0.1rem;
         font-weight: 200;
-        padding: 0.5rem;
-    }
-}
-
-@media (max-width: 992px) {
-    .parrafo__header{
-        font-size: 2rem;
-        font-weight: 400;
         padding: 0.5rem;
     }
 }
