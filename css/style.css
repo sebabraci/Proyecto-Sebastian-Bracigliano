@@ -61,25 +61,27 @@ li a:active{
 
 .contenedor__parrafo__header{
     position: absolute;
-    width: 20rem;
-    height: 10rem;
+    width: 50vw;
+    height: auto;
     background-color: rgba(17, 2, 2, 0.47);
     text-align: center;
-    padding-top: 2rem;
+    top:40%;
+    left: 28%;
+    padding-top: 1rem;
     padding-left: 5rem;
     padding-right: 5rem;
     
 }
 
-@media (min-width: 992px){
+@media (max-width: 992px){
     .contenedor__parrafo__header{
-    width: 90vw;
-    left: 20%;
+    width: 100vw;
+    left: 10%;
     top: 40%;
     }
 }
 
-@media (min-width: 768px){
+@media (max-width: 768px){
     .contenedor__parrafo__header{
     width: 90vw;
     left: 5%;
@@ -91,6 +93,8 @@ li a:active{
     .contenedor__parrafo__header{
     width: 90vw;
     left: 5%;
+    padding-left: 1rem;
+    padding-right: 1rem;
     }
 }
 
@@ -103,7 +107,6 @@ li a:active{
 
 @media (max-width: 992px) {
     .parrafo__header{
-        font-size: 2rem;
         font-weight: 400;
         padding: 0.5rem;
     }
@@ -111,9 +114,8 @@ li a:active{
 
 @media (max-width: 576px) {
     .parrafo__header{
-        font-size: 0.1rem;
+        font-size: 1.3rem;
         font-weight: 200;
-        padding: 0.5rem;
     }
 }
 
@@ -262,13 +264,13 @@ form textarea{
 }
 
 .ubicacion{
- width: 50vw;
- margin-top: 3rem;
- margin-bottom: 3rem;
+    width: 50vw;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 
-.ubicacion h4{
+.ubicacion h3{
     font-size: 18px;
 }
 
